@@ -45,6 +45,7 @@ public class EnemyScript : MonoBehaviour {
             foreach (WeaponScript weapon in weapons) {
                 if (weapon != null && weapon.CanAttack) {
                     weapon.Attack(true);
+                    SoundEffectsHelper.Instance.MakeEnemyShotSound();
                 }
             }
             
