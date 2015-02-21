@@ -4,19 +4,9 @@ using UnityEngine;
 ///   Title screen script
 /// </summary>
 public class MenuScript : MonoBehaviour {
-
-    private GUISkin skin;
-
-    void Start() {
-        // Load a skin for the buttons
-        skin = Resources.Load("GUISkin") as GUISkin;
-    }
-
     void OnGUI() {
         const int buttonWidth = 84;
         const int buttonHeight = 60;
-
-        GUI.skin = skin;
 
         // Determine the button's place on screen
         // Center in X, 2/3 of he height in Y
